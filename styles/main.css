@@ -1,5 +1,176 @@
+@keyframes gradient {
+	0% {background-position: 0% 50%;}
+	50% {background-position: 50% 100%;}
+	100% {background-position: 0% 50%;}
+}
+
 * {
 	margin: 0;
 	padding: 0;
 	font-family: 'Geometria', 'Arial', sans-serif;
+}
+
+body {
+	margin: 0 auto;
+	max-width: 1920px;
+	color: #0d3f57;
+}
+
+a {
+	text-decoration: none;
+}
+
+.logo {
+	height: 50px;
+}
+
+.header {
+	padding: 15px 0;
+	margin: 0 auto;
+	width: 1170px;
+	height: 50px;
+}
+
+.header-logo {
+	padding-left: 0;
+}
+
+.header-logo a {
+	position: relative;
+	display: inline-block;
+	color: #0d3f57;
+}
+
+.header-logo span {
+	position: absolute;
+	top: 15px;
+}
+
+.header-logo a::before{
+	content: "";
+	display: inline-block;
+	background-image: url(../images/logo-w-t.png);
+	width: 100px;
+	height: 50px;
+}
+
+.header-logo > a:hover {
+	color: #ff2727;
+}
+
+.header-logo > a:active {
+	text-decoration: initial;
+	color: initial;
+}
+
+.header-worktime {
+	display: table;
+	height: 50px;
+	font-size: 12px;
+	text-align: center;
+	background: url(../images/icons/clock-circular-outline.png) no-repeat center right;
+}
+
+.header-worktime > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-tel {
+	display: table;
+	height: 50px;
+	font-size: 12px;
+	text-align: right;
+}
+
+.header-tel > * {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.header-tel a {
+	font-size: 15px;
+	color: #0d3f57;
+}
+
+.header-tel a:hover {
+	text-decoration: underline;
+	color: #ff2727;
+}
+
+.header-tel a:active {
+	text-decoration: none;
+	color: initial;
+}
+
+.header-order {
+	padding-right: 0;
+}
+
+.header-order__button {
+	width: 100%;
+	height: 50px;
+}
+
+.order-button {
+	background: linear-gradient(to right, #ff2626, #ff8d18);
+	border: none;
+	border-radius: 7px;
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: 700;
+	text-align: center;
+	cursor: pointer;
+}
+
+.order-button:hover {
+	background: linear-gradient(to left, #ffdd18, #ff5626);
+	background-size: 400% 400%;
+	animation: gradient 2s linear infinite;
+}
+
+.order-button:active {
+	background: linear-gradient(to right, #ff2626, #ff2626);
+}
+
+.order-button:focus {
+	outline: transparent;
+}
+
+.intro {
+	background: url(../images/banner-3_1.jpg) no-repeat center;
+}
+
+.intro-mod {
+	height: 600px;
+	max-width: 1170px;
+	margin: 0 auto;
+	
+}
+
+.intro-info {
+	height: 100%;
+	padding-left: 0;
+}
+
+.intro-info__show {
+	width: 100%;
+	height: 50%;
+}
+
+.intro-info__benefits {
+	width: 100%;
+	height: 50%;
+}
+
+.intro-form {
+	height: 100%;
+	background: url(../images/intro-form.png) no-repeat center right;
+}
+
+.footer {
+	padding: 27px 0;
+	margin: 0 auto;
+	width: 1170px;
+	height: 108px;
 }
