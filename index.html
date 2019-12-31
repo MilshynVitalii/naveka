@@ -10,13 +10,13 @@
 <body>
 	<header class="header module-grid module-grid--gutters">
 		<div class="header-logo logo module-grid__cell-5">
-			<a href="#"><span><b>ДОМА</b>НАВЕКА</span></a>
+			<a href="#"><span><strong>ДОМА</strong>НАВЕКА</span></a>
 		</div>
 		<div class="header-worktime module-grid__cell-2">
-			<span><b>с 9:00 до 21:00</b><br>без выходных</span>
+			<span><strong>с 9:00 до 21:00</strong><br>без выходных</span>
 		</div>
 		<div class="header-tel module-grid__cell-3">
-			<span>Есть вопросы? Звоните!<br><a href="tel:+74952042376"><b>+7 (495) 204-23-76</b></a></span>
+			<span>Есть вопросы? Звоните!<br><a href="tel:+74952042376"><strong>+7 (495) 204-23-76</strong></a></span>
 		</div>
 		<div class="header-order module-grid__cell-2">
 			<button class="header-order__button order-button">Заказать звонок</button>
@@ -26,10 +26,33 @@
 		<section class="intro">
 			<div class="intro-mod module-grid module-grid--gutters">
 				<div class="intro-info module-grid__cell-6">
-					<div class="intro-info__show"></div>
-					<div class="intro-info__benefits"></div>
+					<div class="intro-info__show">
+						<h1 class="intro-info__show-header">Строим Дома</h1>
+						<p class="intro-info__show-article">из бетона, кирпича, поризованных<br> блоков и пеноблоков</p>
+						<p class="intro-info__show-article">в Москве и МО<br>с гарантией 20 лет</p>
+					</div>
+					<div class="intro-info__benefits module-grid module-grid--gutters">
+						<div class="benefits module-grid__cell-4">
+							<p>У нас 7 бригад строителей</p>
+						</div>
+						<div class="benefits module-grid__cell-4">
+							<p>Опыт работы<br>19 лет</p>
+						</div>
+						<div class="benefits module-grid__cell-4">
+							<p>Создаем дома <br>"под ключ", реконструируем или достраиваем</p>
+						</div>
+					</div>
 				</div>
-				<div class="intro-form module-grid__cell-6"></div>
+				<div class="intro-form module-grid__cell-6">
+					<div class="intro-form-label">
+						<span>Бесплатно составим смету на строительство вашего дома уже сегодня!</span>
+						<form action="">
+							<input type="text" placeholder="Ваше имя" required>
+							<input type="tel" placeholder="Ваш телефон" pattern="+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+							<input type="submit" class="order-button" value="Заказать смету">
+						</form>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
