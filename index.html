@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="styles/fonts.css">
 	<link rel="stylesheet" href="styles/module-grid.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
 	<header class="header module-grid module-grid--gutters">
@@ -19,7 +21,7 @@
 			<span>Есть вопросы? Звоните!<br><a href="tel:+74952042376"><strong>+7 (495) 204-23-76</strong></a></span>
 		</div>
 		<div class="header-order module-grid__cell-2">
-			<button class="header-order__button order-button">Заказать звонок</button>
+			<a class="header-link-button link-button">Заказать звонок</a>
 		</div>
 	</header>
 	<main>
@@ -48,16 +50,75 @@
 						<span>Бесплатно составим смету на строительство вашего дома уже сегодня!</span>
 						<form action="">
 							<input type="text" placeholder="Ваше имя" required>
-							<input type="tel" placeholder="Ваш телефон" pattern="+7 \([0-9]{3}\) [0-9]{3}-[0-9]{2}-[0-9]{2}" required>
-							<input type="submit" class="order-button" value="Заказать смету">
+							<input type="tel" placeholder="Ваш телефон" pattern="/^(\+)?(\(\d{2,3}\) ?\d|\d)(([ \-]?\d)|( ?\(\d{2,3}\) ?)){5,12}\d$/" required>
+							<input type="submit" class="link-button" value="Заказать смету">
 						</form>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="projects">
+			<header class="projects-header">
+				<h2>У нас есть уже готовые проекты</h2>
+			</header>
+			<div class="projects-buttons">
+				<button class="projects-buttons__economic">эконом</button>
+				<button class="projects-buttons__medium">средний</button>
+				<button class="projects-buttons__premium">премиум</button>
+			</div>
+			<div class="economic-homes">
+				<div class="projects-carousel">
+				<div class="projects-carousel__item">
+					<img src="images/carousel/economic-home.jpg" alt="">
+					<h3 class="carousel-item__header">Проект Дома Навека 1</h3>
+					<div class="carousel-item__desc">Площадь 102м2</div>
+					<div class="carousel-item__desc">Размеры: 10x23x5</div>
+					<a href="#" class="carousel-item__button link-button">Подробнее о проекте</a>
+				</div>
+				<div class="projects-carousel__item">
+					<img src="images/carousel/economic-home.jpg" alt="">
+					<h3 class="carousel-item__header">Проект Дома Навека 2</h3>
+					<div class="carousel-item__desc">Площадь 102м2</div>
+					<div class="carousel-item__desc">Размеры: 10x23x5</div>
+					<a href="#" class="carousel-item__button link-button">Подробнее о проекте</a>
+				</div>
+				<div class="projects-carousel__item"><img src="images/carousel/economic-home.jpg" alt="">
+					<h3 class="carousel-item__header">Проект Дома Навека 3</h3>
+					<div class="carousel-item__desc">Площадь 102м2</div>
+					<div class="carousel-item__desc">Размеры: 10x23x5</div>
+					<a href="#" class="carousel-item__button link-button">Подробнее о проекте</a></div>
+				<div class="projects-carousel__item">
+					<img src="images/carousel/economic-home.jpg" alt="">
+					<h3 class="carousel-item__header">Проект Дома Навека 4</h3>
+					<div class="carousel-item__desc">Площадь 102м2</div>
+					<div class="carousel-item__desc">Размеры: 10x23x5</div>
+					<a href="#" class="carousel-item__button link-button">Подробнее о проекте</a>
+				</div>
+				<div class="projects-carousel__item">
+					<img src="images/carousel/economic-home.jpg" alt="">
+					<h3 class="carousel-item__header">Проект Дома Навека 5</h3>
+					<div class="carousel-item__desc">Площадь 102м2</div>
+					<div class="carousel-item__desc">Размеры: 10x23x5</div>
+					<a href="#" class="carousel-item__button link-button">Подробнее о проекте</a>
+				</div>
+				<div class="projects-carousel__item">
+					<img src="images/carousel/economic-home.jpg" alt="">
+					<h3 class="carousel-item__header">Проект Дома Навека 6</h3>
+					<div class="carousel-item__desc">Площадь 102м2</div>
+					<div class="carousel-item__desc">Размеры: 10x23x5</div>
+					<a href="#" class="carousel-item__button link-button">Подробнее о проекте</a>
+				</div>
+			</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer module-grid module-grid--gutters">
 		<div class="footer-logo logo module-grid__cell-5"></div>
 	</footer>
+
+
+	<script type="text/javascript" src="libs/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="libs/slick-carousel/slick/slick.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
